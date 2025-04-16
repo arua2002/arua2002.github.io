@@ -1,0 +1,81 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Упрощение управления размерами элементов */
+}
+
+/* Общие стили для тела страницы */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-size: cover; /* Заполнение всего экрана */
+    background-position: center; /* Центрирование изображения */
+    color: #333;
+}
+
+/* Стили для заголовка */
+header {
+    background: rgba(0, 123, 255, 0.8); /* Полупрозрачный фон */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Стили для навигационного меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Цвет при наведении */
+}
+
+/* Стили для секций */
+section {
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для секций */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для секций */
+}
+
+/* Стили для заголовков секций */
+h2 {
+    margin-bottom: 15px; /* Отступ под заголовками секций */
+}
+
+/* Стили для подвала */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 123, 255, 0.8); /* Полупрозрачный фон */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Вертикальное размещение пунктов меню на маленьких экранах */
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 5px; /* Уменьшение отступов для мобильных устройств */
+    }
+}
